@@ -1,0 +1,89 @@
+/*DailPad Problem*/
+#include<stdio.h>
+
+int main()
+
+{
+
+    int a[10][4],i,count=97,j,m,n,ii,ji;
+
+    for(i=2;i<10;i++)
+
+    {
+
+        if(i==7 || i==9)
+
+        { j=0;
+
+            while(j<4)
+
+            {
+
+                a[i][j]=count;
+
+                count++;
+
+                j++;
+
+            }
+
+        }
+
+        else
+
+        {
+
+          j=0;
+
+            while(j<3)
+
+            {
+
+                a[i][j]=count;
+
+                count++;
+
+                j++;
+ }  
+
+        }
+
+    }
+
+    scanf("%d%d",&m,&n);
+
+    if(m==7 || m==9)
+
+    ii=4;
+
+    else
+
+    ii=3;
+
+    if(n==7 || n==9)
+
+    ji=4;
+
+    else
+
+    ji=3;
+
+    
+
+    for(i=0;i<ii;i++)
+
+    {
+
+        for(j=0;j<ji;j++)
+
+        {
+
+            printf("%c%c  ",a[m][i],a[n][j]);
+
+        }
+
+        printf("\n");
+
+    }
+
+}
